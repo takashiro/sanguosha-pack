@@ -4,6 +4,8 @@ export { default as CardExpense } from './CardExpense';
 export { default as CardMove } from './CardMove';
 export { default as CardUse } from './CardUse';
 export { default as Damage } from './Damage';
+export { default as EventListener } from './EventListener';
+export { default as EventType } from './EventType';
 export { default as GameDriver } from './GameDriver';
 export { default as Judgement } from './Judgement';
 export { default as Player } from './Player';

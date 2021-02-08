@@ -11,11 +11,12 @@ import CardExpense from './CardExpense';
 import { CardMoveOptions } from './CardMove';
 import CardUse from './CardUse';
 import Damage from './Damage';
+import EventDriver from './EventDriver';
 import Judgement from './Judgement';
 import Player from './Player';
 import Recover from './Recover';
 
-interface GameDriver {
+interface GameDriver extends EventDriver {
 	/**
 	 * @return Whether the driver is running.
 	 */
