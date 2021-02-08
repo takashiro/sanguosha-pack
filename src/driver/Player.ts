@@ -14,6 +14,11 @@ import ChooseGeneralOptions from '../base/ChooseGeneralOptions';
 
 interface Player extends MetaPlayer {
 	/**
+	 * @return player id
+	 */
+	getId(): number;
+
+	/**
 	 * @return Generals
 	 */
 	getGenerals(): General[];

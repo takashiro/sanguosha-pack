@@ -20,6 +20,28 @@ module.exports = {
 			'tab',
 		],
 		'linebreak-style': 'off',
+		'import/extensions': [
+			'error',
+			'ignorePackages',
+			{
+				ts: 'never',
+				js: 'never',
+			},
+		],
+		'max-len': [
+			'error',
+			300,
+		],
 		'no-tabs': 'off',
+	},
+	settings: {
+		'import/resolver': {
+			node: {
+				extensions: [
+					'.ts',
+					'.js',
+				],
+			},
+		},
 	},
 };
