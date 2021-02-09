@@ -12,3 +12,10 @@ export { default as HorseCard } from './HorseCard';
 export { default as DefensiveHorseCard } from './DefensiveHorseCard';
 export { default as OffensiveHorseCard } from './OffensiveHorseCard';
 export { default as TreasureCard } from './TreasureCard';
+
+export { default as InstantTrickCard } from './InstantTrickCard';
+export { default as MonadicTrickCard } from './MonadicTrickCard';
+export { default as FixedTargetTrickCard } from './FixedTargetTrickCard';
+export { default as GlobalEffectTrickCard } from './GlobalEffectTrickCard';
+export { default as AreaEffectTrickCard } from './AreaEffectTrickCard';
+export { default as DelayedTrickCard } from './DelayedTrickCard';
