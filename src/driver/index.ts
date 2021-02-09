@@ -10,5 +10,6 @@ export { default as EventListener } from './EventListener';
 export { default as EventType } from './EventType';
 export { default as GameDriver } from './GameDriver';
 export { default as Judgement } from './Judgement';
+export { default as PhaseChange } from './PhaseChange';
 export { default as Player } from './Player';
 export { default as Recover } from './Recover';
