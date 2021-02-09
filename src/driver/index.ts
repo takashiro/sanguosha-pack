@@ -1,4 +1,5 @@
 export { default as Card } from './Card';
+export { default as CardDraw } from './CardDraw';
 export { default as CardEffect } from './CardEffect';
 export { default as CardExpense } from './CardExpense';
 export { default as CardMove } from './CardMove';
