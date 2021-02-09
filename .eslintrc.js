@@ -32,6 +32,10 @@ module.exports = {
 			'error',
 			300,
 		],
+		'no-restricted-syntax': [
+			'error',
+			'WithStatement',
+		],
 		'no-tabs': 'off',
 	},
 	settings: {
