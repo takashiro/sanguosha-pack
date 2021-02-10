@@ -11,6 +11,7 @@ import {
 
 import CardOption from '../base/CardOption';
 import ChooseGeneralOptions from '../base/ChooseGeneralOptions';
+import PlayAction from './PlayAction';
 
 interface Player extends MetaPlayer {
 	/**
@@ -273,6 +274,39 @@ interface Player extends MetaPlayer {
 	 * @return The index of selected skill
 	 */
 	invokeSkill(skills: string[]): Promise<number>;
+
+	/**
+	 * Request the player to perform a play action.
+	 * @param availableCards
+	 */
+	play(availableCards: Card[]): Promise<PlayAction | null>;
+
+	/**
+	 * Send a request to the player.
+	 * @param command
+	 * @param args
+	 * @param timeout
+	 */
+	request(command: number, args: unknown, timeout: number): Promise<unknown>;
+
+	/**
+	 * Send a request to the player.
+	 * @param command
+	 * @param args
+	 * @param timeout
+	 */
+	request(command: number, args: unknown): Promise<unknown>;
+
+	/**
+	 * Sets default request timeout.
+	 * @param msecs
+	 */
+	setRequestTimeout(msecs: number): void;
+
+	/**
+	 * @return Default timeout of each request.
+	 */
+	getRequestTimeout(): number;
 }
 
 export default Player;
