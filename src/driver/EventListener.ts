@@ -54,6 +54,7 @@ abstract class EventListener<ParamType> {
 	 * @param listeners
 	 * @return Index of the selected listener
 	 */
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	async select(listeners: EventListener<ParamType>[], data: ParamType): Promise<number> {
 		return 0;
 	}

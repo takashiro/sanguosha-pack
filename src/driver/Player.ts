@@ -287,7 +287,8 @@ interface Player extends MetaPlayer {
 	 * @param args
 	 * @param timeout
 	 */
-	request(command: number, args: unknown, timeout: number): Promise<unknown>;
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	request(command: number, args: unknown, timeout: number): Promise<any>;
 
 	/**
 	 * Send a request to the player.
@@ -295,7 +296,8 @@ interface Player extends MetaPlayer {
 	 * @param args
 	 * @param timeout
 	 */
-	request(command: number, args: unknown): Promise<unknown>;
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	request(command: number, args: unknown): Promise<any>;
 
 	/**
 	 * Sets default request timeout.
