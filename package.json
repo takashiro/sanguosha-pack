@@ -34,7 +34,7 @@
     "typescript": "^4.1.3"
   },
   "dependencies": {
-    "@karuta/sanguosha-core": "^0.1.5"
+    "@karuta/sanguosha-core": "^0.1.6"
   },
   "files": [
     "dist"
