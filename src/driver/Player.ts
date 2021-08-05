@@ -282,24 +282,6 @@ interface Player extends MetaPlayer {
 	play(availableCards: Card[]): Promise<PlayAction | null>;
 
 	/**
-	 * Send a request to the player.
-	 * @param command
-	 * @param args
-	 * @param timeout
-	 */
-	// eslint-disable-next-line @typescript-eslint/no-explicit-any
-	request(command: number, args: unknown, timeout: number): Promise<any>;
-
-	/**
-	 * Send a request to the player.
-	 * @param command
-	 * @param args
-	 * @param timeout
-	 */
-	// eslint-disable-next-line @typescript-eslint/no-explicit-any
-	request(command: number, args: unknown): Promise<any>;
-
-	/**
 	 * Sets default request timeout.
 	 * @param msecs
 	 */
