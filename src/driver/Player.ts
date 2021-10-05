@@ -29,35 +29,35 @@ interface Player extends MetaPlayer {
 	/**
 	 * Alias of getHeadGeneral().
 	 */
-	getGeneral(): General | null;
+	getGeneral(): General | undefined;
 
 	/**
 	 * Alias of setHeadGeneral().
 	 * @param general
 	 */
-	setGeneral(general: General | null): void;
+	setGeneral(general?: General): void;
 
 	/**
 	 * @return Head general
 	 */
-	getHeadGeneral(): General | null;
+	getHeadGeneral(): General | undefined;
 
 	/**
 	 * Sets head general
 	 * @param general
 	 */
-	setHeadGeneral(general: General | null): void;
+	setHeadGeneral(general?: General): void;
 
 	/**
 	 * @return Deputy general
 	 */
-	getDeputyGeneral(): General | null;
+	getDeputyGeneral(): General | undefined;
 
 	/**
 	 * Sets deputy general
 	 * @param general
 	 */
-	setDeputyGeneral(general: General): void;
+	setDeputyGeneral(general?: General): void;
 
 	/**
 	 * @return Attack range
