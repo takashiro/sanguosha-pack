@@ -7,10 +7,12 @@ import {
 	Skill,
 	SkillArea,
 	SkillAreaType,
+	Reply,
 } from '@karuta/sanguosha-core';
 
 import ChooseCardOptions from '../base/ChooseCardOptions';
 import ChooseGeneralOptions from '../base/ChooseGeneralOptions';
+import ChoosePlayerOptions from '../base/ChoosePlayerOptions';
 import PlayAction from '../base/PlayAction';
 
 interface Player extends MetaPlayer {
@@ -188,6 +190,13 @@ interface Player extends MetaPlayer {
 	 * @param option
 	 */
 	askForCards(areas: CardArea[], option: ChooseCardOptions): Promise<Card[]>;
+
+	/**
+	 * Ask the player to choose player(s).
+	 * @param players
+	 * @param feasible
+	 */
+	askForPlayers(players: Player[], options?: ChoosePlayerOptions): Promise<Reply<number[]>>;
 
 	/**
 	 * Update a player property. Other players won't know the change.
