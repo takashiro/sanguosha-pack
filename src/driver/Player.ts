@@ -11,7 +11,7 @@ import {
 
 import ChooseCardOptions from '../base/ChooseCardOptions';
 import ChooseGeneralOptions from '../base/ChooseGeneralOptions';
-import PlayAction from './PlayAction';
+import PlayAction from '../base/PlayAction';
 
 interface Player extends MetaPlayer {
 	/**

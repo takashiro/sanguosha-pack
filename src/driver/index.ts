@@ -17,6 +17,5 @@ export { default as GameDriver } from './GameDriver';
 export { default as InstantCardEffect } from './InstantCardEffect';
 export { default as Judgement } from './Judgement';
 export { default as PhaseChange } from './PhaseChange';
-export { default as PlayAction } from './PlayAction';
 export { default as Player } from './Player';
 export { default as Recover } from './Recover';
