@@ -146,13 +146,13 @@ interface GameDriver extends EventDriver {
 	/**
 	 * @return current player.
 	 */
-	getCurrentPlayer(): Player | null;
+	getCurrentPlayer(): Player | undefined;
 
 	/**
 	 * Set current player.
 	 * @param player
 	 */
-	setCurrentPlayer(player: Player | null): void;
+	setCurrentPlayer(player?: Player): void;
 
 	/**
 	 * Sort players by action order
