@@ -1,7 +1,7 @@
 import CardAction from './CardAction';
 import CardPattern from './CardPattern';
 
-interface CardOption {
+interface ChooseCardOptions {
 	action: CardAction;
 	minNum: number;
 	maxNum: number;
@@ -9,4 +9,4 @@ interface CardOption {
 	pattern?: CardPattern;
 }
 
-export default CardOption;
+export default ChooseCardOptions;

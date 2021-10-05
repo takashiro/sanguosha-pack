@@ -9,7 +9,7 @@ import {
 	SkillAreaType,
 } from '@karuta/sanguosha-core';
 
-import CardOption from '../base/CardOption';
+import ChooseCardOptions from '../base/ChooseCardOptions';
 import ChooseGeneralOptions from '../base/ChooseGeneralOptions';
 import PlayAction from './PlayAction';
 
@@ -187,7 +187,7 @@ interface Player extends MetaPlayer {
 	 * @param areas
 	 * @param option
 	 */
-	askForCards(areas: CardArea[], option: CardOption): Promise<Card[]>;
+	askForCards(areas: CardArea[], option: ChooseCardOptions): Promise<Card[]>;
 
 	/**
 	 * Update a player property. Other players won't know the change.
