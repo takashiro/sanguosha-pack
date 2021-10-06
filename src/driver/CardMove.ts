@@ -25,11 +25,18 @@ export default class CardMove {
 	}
 
 	toJSON(open: boolean): CardMoveStruct {
+		if (open) {
+			return {
+				from: this.from.toJSON(),
+				to: this.to.toJSON(),
+				cards: this.cards.map((card) => card.getId()),
+			};
+		}
+
 		return {
 			from: this.from.toJSON(),
 			to: this.to.toJSON(),
-			cards: open ? this.cards.map((card) => card.toJSON()) : undefined,
-			cardNum: open ? undefined : this.cards.length,
+			cardNum: this.cards.length,
 		};
 	}
 }
