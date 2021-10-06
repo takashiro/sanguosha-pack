@@ -300,6 +300,14 @@ interface Player extends MetaPlayer {
 	 * @return Default timeout of each request.
 	 */
 	getRequestTimeout(): number;
+
+	/**
+	 * Send a unicast notification.
+	 * @param method
+	 * @param context
+	 * @param params
+	 */
+	notify(method: number, context: number, params?: unknown): void;
 }
 
 export default Player;
